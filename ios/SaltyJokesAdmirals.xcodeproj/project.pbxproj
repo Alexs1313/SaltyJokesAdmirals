@@ -10,10 +10,10 @@
 		065708F959CF42FF9F26E4FD /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9143B6EB16474416954FF136 /* Inter-Black.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-SaltyJokesAdmirals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-SaltyJokesAdmirals.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		610AF8A1086947348EBEB870 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D280CB50734543FFA41C58B0 /* Inter-Bold.ttf */; };
 		68A65729FE6D770FFE54CCA8 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9C2C8477ADD34BA19249B0D6 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AB74CC1510D4E9EB5F4C988 /* Inter-Bold.ttf */; };
 		A4067652B0F84D0C895A5ECA /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4370808C3174972ABD5A0D5 /* Inter-SemiBold.ttf */; };
 		DEFEA6D671AA4E5096757343 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9DACE13F1F2459FAA36BE87 /* Inter-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -23,16 +23,16 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SaltyJokesAdmirals/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SaltyJokesAdmirals/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = SaltyJokesAdmirals/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1AB74CC1510D4E9EB5F4C988 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-SaltyJokesAdmirals.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltyJokesAdmirals.debug.xcconfig"; path = "Target Support Files/Pods-SaltyJokesAdmirals/Pods-SaltyJokesAdmirals.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-SaltyJokesAdmirals.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaltyJokesAdmirals.release.xcconfig"; path = "Target Support Files/Pods-SaltyJokesAdmirals/Pods-SaltyJokesAdmirals.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SaltyJokesAdmirals.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SaltyJokesAdmirals.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SaltyJokesAdmirals/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SaltyJokesAdmirals/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9143B6EB16474416954FF136 /* Inter-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Black.ttf"; path = "../src/assets/fonts/Inter-Black.ttf"; sourceTree = "<group>"; };
-		D280CB50734543FFA41C58B0 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
+		9143B6EB16474416954FF136 /* Inter-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Black.ttf"; path = "../src/assets/fonts/Inter-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F4370808C3174972ABD5A0D5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
-		F9DACE13F1F2459FAA36BE87 /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
+		F4370808C3174972ABD5A0D5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F9DACE13F1F2459FAA36BE87 /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				9143B6EB16474416954FF136 /* Inter-Black.ttf */,
-				D280CB50734543FFA41C58B0 /* Inter-Bold.ttf */,
 				F9DACE13F1F2459FAA36BE87 /* Inter-Regular.ttf */,
 				F4370808C3174972ABD5A0D5 /* Inter-SemiBold.ttf */,
+				1AB74CC1510D4E9EB5F4C988 /* Inter-Bold.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -183,9 +182,9 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				68A65729FE6D770FFE54CCA8 /* PrivacyInfo.xcprivacy in Resources */,
 				065708F959CF42FF9F26E4FD /* Inter-Black.ttf in Resources */,
-				610AF8A1086947348EBEB870 /* Inter-Bold.ttf in Resources */,
 				DEFEA6D671AA4E5096757343 /* Inter-Regular.ttf in Resources */,
 				A4067652B0F84D0C895A5ECA /* Inter-SemiBold.ttf in Resources */,
+				9C2C8477ADD34BA19249B0D6 /* Inter-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +297,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SaltyJokesAdmirals;
 				PRODUCT_NAME = SaltyJokesAdmirals;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -325,7 +324,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SaltyJokesAdmirals;
 				PRODUCT_NAME = SaltyJokesAdmirals;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
