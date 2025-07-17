@@ -144,7 +144,7 @@ const Nicknames = () => {
                         onChangeText={setNickname}
                       />
                       <PulsingButton
-                        disabled={!nickname}
+                        // isDisabled={!nickname}
                         onPress={handleShowNickname}
                         activeOpacity={0.7}
                         style={styles.startBtn}

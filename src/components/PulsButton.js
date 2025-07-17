@@ -1,8 +1,7 @@
-import { button } from 'motion/react-client';
 import React, { useEffect, useRef, useState } from 'react';
-import { View, StyleSheet, Animated, TouchableOpacity } from 'react-native';
+import { StyleSheet, Animated, TouchableOpacity } from 'react-native';
 
-export default function PulsingButton({ style, children, onPress, disabled }) {
+export default function PulsingButton({ style, children, onPress }) {
   const scale = useRef(new Animated.Value(1)).current;
   const rotate = useRef(new Animated.Value(0)).current;
 
@@ -90,26 +89,23 @@ export default function PulsingButton({ style, children, onPress, disabled }) {
   });
 
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        onPress={onPress}
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
-        disabled={disabled}
+    <TouchableOpacity
+      onPress={onPress}
+      onPressIn={handlePressIn}
+      onPressOut={handlePressOut}
+    >
+      <Animated.View
+        style={[
+          styles.button,
+          {
+            transform: [{ scale }, { rotate: rotateDeg }],
+          },
+          style,
+        ]}
       >
-        <Animated.View
-          style={[
-            styles.button,
-            {
-              transform: [{ scale }, { rotate: rotateDeg }],
-            },
-            style,
-          ]}
-        >
-          {children}
-        </Animated.View>
-      </TouchableOpacity>
-    </View>
+        {children}
+      </Animated.View>
+    </TouchableOpacity>
   );
 }
 

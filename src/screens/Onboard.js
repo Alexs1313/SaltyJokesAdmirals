@@ -7,6 +7,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 import PulsingButton from '../components/PulsButton';
@@ -70,11 +71,11 @@ Can you withstand this storm of laughter?`
             </Text>
           </View>
 
-          <PulsingButton style={styles.button} onPress={handleNextStep}>
+          <TouchableOpacity style={styles.button} onPress={handleNextStep}>
             <Text style={styles.buttonText}>
               {step === 1 ? 'Start' : step === 2 ? 'Next' : 'Start'}
             </Text>
-          </PulsingButton>
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </ImageBackground>

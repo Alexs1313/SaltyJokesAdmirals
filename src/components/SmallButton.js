@@ -96,31 +96,29 @@ const SmallButton = ({ onPress, style, title, type }) => {
   });
 
   return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        activeOpacity={0.7}
-        onPress={onPress}
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
+    <TouchableOpacity
+      activeOpacity={0.7}
+      onPress={onPress}
+      onPressIn={handlePressIn}
+      onPressOut={handlePressOut}
+    >
+      <Animated.View
+        style={[
+          styles.shareBtn,
+          {
+            transform: [{ scale }, { rotate: rotateDeg }],
+          },
+          style,
+        ]}
       >
-        <Animated.View
-          style={[
-            styles.shareBtn,
-            {
-              transform: [{ scale }, { rotate: rotateDeg }],
-            },
-            style,
-          ]}
-        >
-          <Text style={styles.btnText}>{title}</Text>
-          {type === 'Share' ? (
-            <Image source={require('../assets/icons/share.png')} />
-          ) : (
-            <Image source={require('../assets/icons/retry.png')} />
-          )}
-        </Animated.View>
-      </TouchableOpacity>
-    </View>
+        <Text style={styles.btnText}>{title}</Text>
+        {type === 'Share' ? (
+          <Image source={require('../assets/icons/share.png')} />
+        ) : (
+          <Image source={require('../assets/icons/retry.png')} />
+        )}
+      </Animated.View>
+    </TouchableOpacity>
   );
 };
 
