@@ -100,13 +100,13 @@ const Nicknames = () => {
                     onPress={handleShowNickname}
                   />
 
-                  <PulsingButton
+                  <TouchableOpacity
                     activeOpacity={0.7}
                     style={styles.homeBtn}
                     onPress={() => navigation.goBack()}
                   >
                     <Image source={require('../assets/icons/home.png')} />
-                  </PulsingButton>
+                  </TouchableOpacity>
                 </View>
               </View>
             ) : (
@@ -143,15 +143,15 @@ const Nicknames = () => {
                         textAlign="center"
                         onChangeText={setNickname}
                       />
-                      <PulsingButton
-                        // isDisabled={!nickname}
+                      <TouchableOpacity
+                        disabled={!nickname}
                         onPress={handleShowNickname}
                         activeOpacity={0.7}
                         style={styles.startBtn}
                       >
                         <Text style={styles.btnText}>Name for a sardine</Text>
                         <Image source={require('../assets/icons/start.png')} />
-                      </PulsingButton>
+                      </TouchableOpacity>
                     </View>
                   </LinearGradient>
                 </View>

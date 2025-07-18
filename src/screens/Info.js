@@ -100,7 +100,7 @@ const Info = () => {
                 </View>
               </LinearGradient>
             </View>
-            <View style={{ width: '40%' }}>
+            <View style={{ width: '40%', marginTop: 15 }}>
               <SmallButton
                 onPress={handleShare}
                 style={{ marginTop: 16 }}

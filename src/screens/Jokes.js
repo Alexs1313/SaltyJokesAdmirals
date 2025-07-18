@@ -225,7 +225,7 @@ const Jokes = () => {
                         </View>
 
                         <View style={styles.containerButtonsWrap}>
-                          <PulsingButton
+                          <TouchableOpacity
                             onPress={() =>
                               toggleLikeTale(tales[currentIndexTale])
                             }
@@ -241,7 +241,7 @@ const Jokes = () => {
                                 source={require('../assets/icons/like.png')}
                               />
                             )}
-                          </PulsingButton>
+                          </TouchableOpacity>
                           <SmallButton
                             onPress={() =>
                               handleShareTale(
@@ -304,7 +304,7 @@ const Jokes = () => {
                         </View>
 
                         <View style={styles.containerButtonsWrap}>
-                          <PulsingButton
+                          <TouchableOpacity
                             style={styles.addToFavBtn}
                             activeOpacity={0.7}
                             onPress={() => toggleLike()}
@@ -318,7 +318,7 @@ const Jokes = () => {
                                 source={require('../assets/icons/like.png')}
                               />
                             )}
-                          </PulsingButton>
+                          </TouchableOpacity>
                           <SmallButton
                             onPress={() =>
                               handleShareJoke(jokes[currentIndex].text)
@@ -332,18 +332,18 @@ const Jokes = () => {
                       <View>
                         <Text style={styles.menuTitle}>Select jokes:</Text>
                         <View style={styles.buttonsWrap}>
-                          <PulsingButton
+                          <TouchableOpacity
                             style={styles.selectButtonContainer}
                             onPress={() => setShowTales(true)}
                           >
                             <Text style={styles.btnText}>Admiral`s Tales</Text>
-                          </PulsingButton>
-                          <PulsingButton
+                          </TouchableOpacity>
+                          <TouchableOpacity
                             style={styles.selectButtonContainer}
                             onPress={() => setShowJokes(true)}
                           >
                             <Text style={styles.btnText}>Jokes</Text>
-                          </PulsingButton>
+                          </TouchableOpacity>
                         </View>
                       </View>
                     )}

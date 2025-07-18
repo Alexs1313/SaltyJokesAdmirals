@@ -14,7 +14,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import SmallButton from './SmallButton';
 import { useStore } from '../store/context';
 import Toast from 'react-native-toast-message';
-import PulsingButton from './PulsButton';
 
 const TaleCard = ({ item }) => {
   const {
@@ -101,7 +100,7 @@ const TaleCard = ({ item }) => {
         <Text style={styles.jokeText}>{item.tale}</Text>
 
         <View style={styles.containerButtonsWrap}>
-          <PulsingButton
+          <TouchableOpacity
             style={styles.addToFavBtn}
             activeOpacity={0.7}
             onPress={() => toggleLikeTale(item)}
@@ -111,7 +110,7 @@ const TaleCard = ({ item }) => {
             ) : (
               <Image source={require('../assets/icons/like.png')} />
             )}
-          </PulsingButton>
+          </TouchableOpacity>
           <SmallButton
             onPress={() => handleShareJoke()}
             title={'Drop a friend'}

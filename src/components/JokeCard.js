@@ -13,7 +13,6 @@ import { useStore } from '../store/context';
 import { useFocusEffect } from '@react-navigation/native';
 import LinearGradient from 'react-native-linear-gradient';
 import Toast from 'react-native-toast-message';
-import PulsingButton from './PulsButton';
 
 const JokeCard = ({ item }) => {
   const {
@@ -96,7 +95,7 @@ const JokeCard = ({ item }) => {
           </View>
         </View>
         <View style={styles.containerButtonsWrap}>
-          <PulsingButton
+          <TouchableOpacity
             style={styles.addToFavBtn}
             activeOpacity={0.7}
             onPress={() => toggleLike(item)}
@@ -106,7 +105,7 @@ const JokeCard = ({ item }) => {
             ) : (
               <Image source={require('../assets/icons/like.png')} />
             )}
-          </PulsingButton>
+          </TouchableOpacity>
           <SmallButton
             onPress={() => handleShareJoke()}
             title={'Drop a friend'}

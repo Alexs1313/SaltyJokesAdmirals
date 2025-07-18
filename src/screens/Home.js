@@ -19,7 +19,6 @@ import { dailyJokes } from '../data/dailyJokes';
 import SmallButton from '../components/SmallButton';
 import AnimatedView from '../components/animate/AnimatedView';
 import { useStore } from '../store/context';
-import PulsingButton from '../components/PulsButton';
 
 const { height, width } = Dimensions.get('window');
 
@@ -134,7 +133,7 @@ const Home = () => {
                       type={'Share'}
                     />
 
-                    <PulsingButton
+                    <TouchableOpacity
                       onPress={() => toggleLike()}
                       style={styles.addToFavBtn}
                     >
@@ -143,7 +142,7 @@ const Home = () => {
                       ) : (
                         <Image source={require('../assets/icons/like.png')} />
                       )}
-                    </PulsingButton>
+                    </TouchableOpacity>
                   </View>
                 </View>
               </LinearGradient>
@@ -159,7 +158,6 @@ const Home = () => {
             >
               <View style={styles.menuGradientContainer}>
                 <Text style={styles.menuTitle}>MENU</Text>
-                <PulsingButton />
 
                 <TouchableOpacity
                   style={styles.menuBtn}
